@@ -1,0 +1,25 @@
+:root {
+    --verde:#70aa2a;
+    --negro:#000;
+}
+
+.nav-propio {
+    background: var(--verde);
+    display: flex;
+}
+
+h1 {
+    color: var(--negro);
+    font-size: 1.5rem;
+}
+
+nav div a img {
+    width: 55%;
+}
+
+/* @media screen and (min-width: 990px){
+    .nav-desktop {
+        display: flex;
+        justify-content: center;
+    }
+} */
