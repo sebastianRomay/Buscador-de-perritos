@@ -8,24 +8,17 @@
     <link rel="stylesheet" href="./css/styleInicio.css">
     <link rel="stylesheet" href="./css/styleSwitch.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Pet's </title>
 </head>
 <body>
-    <header class="">
+    <header>
 
         <nav class="navbar navbar-expand-lg navbar-light nav-propio d-flex">
             <div class="container-fluid d-flex justify-content-between">
                 <div class="d-flex align-items-center">
-                    <a href="./paginaInicio.html"><img src="./logo.png" alt=""></a>
-          
-                <!-- <h1 id="titulo-pagina-inicio"></h1> -->
-             
-                  <form class="d-flex">
-                      <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                      <button class="btn btn-outline-light" type="button"><i class="bi bi-search"></i></button>
-                    </form>
+                    <a href="./paginaInicio.html"><img src="./img/logo3.svg" alt=""></a>
                 </div>
-                
                 <div id="switch-mode" class="d-flex justify-content-center">
                     <label class="switch">
                         <input type="checkbox" class="checkbox">
@@ -35,14 +28,33 @@
                 
             </div>
         </nav>
+        <h1 id="titulo"></h1>
     </header>
 
     <main id="#contenido-principal" class="container-fluid" >
-        <select id='select' onchange="cargar(this.value)">
-        </select>
-        <div id="cards-container" class="d-flex flex-wrap gap-2">
+    <div class="d-flex justify-content-around gap-4 align-items-center">
 
+            <div class="d-flex flex-column mt-3">
+                <h2>Elige una raza de la lista:</h2>
+                <select id='select' onchange="cargar(this.value)" class="form-select">
+                </select>
+            </div>
+
+        <div class="d-flex mt-3 flex-column">
+            <h2>Puedes buscarla por nombre:</h2>
+                <div class="d-flex busqueda">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" id="search">
+                    <button class="btn btn-color" type="button" id="button-search"><i class="bi bi-search"></i></button>
+                </div>
         </div>
+    </div>
+
+    <section>
+
+        <div id="cards-container" class="d-flex flex-wrap gap-4 justify-content-center mt-5">
+        </div>
+
+    </section>
     </main>
 
 
@@ -58,6 +70,12 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
       
       <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+
       <script src="./js/jquery-3.6.0.js"></script>
 
     <script src="./js/paginaInicio.js"></script>
