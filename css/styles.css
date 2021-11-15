@@ -1,0 +1,22 @@
+:root {
+    --verde:#70aa2a;
+    --negro:#000;}
+
+body {
+    background: url('https://media.istockphoto.com/vectors/dog-toy-puppy-dog-bone-dog-paw-tennis-ball-bowl-doodle-vector-vector-id834826978?s=2048x2048');
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.margin {
+    margin-top: 12%;
+}
+
+form {
+    border: 2px solid var(--negro);
+    border-radius: 14px;
+}
+
+.boton-propio{
+    margin-left: 30%;
+}
