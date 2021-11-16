@@ -77,7 +77,24 @@ h2 {
     color: var(--marrocito);
 }
 
+footer {
+    background: var(--marronFuerte);
+}
 
+footer div h4 {
+    font-size: 1.4rem;
+
+}
+
+footer div a i {
+    font-size: 2rem;
+    color: var(--negro);
+    transition: .2s;
+}
+
+footer div a i:hover {
+    color: var(--marrocito);
+}
 /* @media screen and (min-width: 990px){
     .nav-desktop {
         display: flex;
